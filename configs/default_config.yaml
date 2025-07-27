@@ -1,0 +1,30 @@
+# Default configuration for fake news detection pipeline
+
+data_paths:
+  isot_fake_path: "data/raw/Fake.csv"
+  isot_real_path: "data/raw/True.csv"
+  kaggle_path: "data/raw/fake_or_real_news.csv"
+
+traditional_models:
+  max_features: 1000
+  min_df: 2
+
+deberta:
+  model_name: "microsoft/deberta-v3-base"
+  max_length: 512
+  batch_size: 16
+  epochs: 3
+  learning_rate: 2e-5
+
+ensemble:
+  method: "weighted_voting"  # weighted_voting, stacking, confidence_based
+
+training:
+  cross_validation_folds: 5
+  test_size: 0.2
+  validation_size: 0.1
+  random_state: 42
+
+output:
+  models_dir: "models/checkpoints"
+  results_dir: "results/experiments"
