@@ -1,0 +1,1 @@
+"""Deployment module for fake news detection API."""
