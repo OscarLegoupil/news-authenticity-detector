@@ -1,5 +1,12 @@
 # Cross-Domain Fake News Detection with DeBERTa-v3
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Framework](https://img.shields.io/badge/Framework-PyTorch-red.svg)](https://pytorch.org)
+[![HuggingFace](https://img.shields.io/badge/🤗%20Hugging%20Face-Transformers-orange.svg)](https://huggingface.co/transformers)
+[![FastAPI](https://img.shields.io/badge/API-FastAPI-green.svg)](https://fastapi.tiangolo.com)
+[![Docker](https://img.shields.io/badge/Docker-Enabled-blue.svg)](https://docker.com)
+
 A production-ready NLP pipeline for fake news detection that prioritizes **generalization across datasets** over single-benchmark performance. Achieves 97% F1 on ISOT and 63% F1 on cross-domain Kaggle dataset, demonstrating realistic transformer improvements and the ongoing challenges of domain transfer in fake news detection.
 
 ## Project Overview
@@ -331,6 +338,10 @@ The performance drop from 97% F1 (same domain) to 63% F1 (cross-domain) demonstr
 - **Datasets**: ISOT Fake News Dataset, Kaggle Fake News Challenge
 - **Models**: microsoft/deberta-v3-base, Hugging Face Transformers
 - **Evaluation**: Beyond Accuracy: Behavioral Testing of NLP Models (Ribeiro et al.)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
