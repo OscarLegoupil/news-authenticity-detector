@@ -1,0 +1,20 @@
+data_paths:
+  isot_fake_path: data/raw/Fake.csv
+  isot_real_path: data/raw/True.csv
+  kaggle_path: data/raw/fake_or_real_news.csv
+deberta:
+  batch_size: 16
+  epochs: 3
+  learning_rate: 2e-5
+  max_length: 512
+  model_name: microsoft/deberta-v3-base
+ensemble:
+  method: weighted_voting
+traditional_models:
+  max_features: 1000
+  min_df: 2
+training:
+  cross_validation_folds: 5
+  random_state: 42
+  test_size: 0.2
+  validation_size: 0.1
